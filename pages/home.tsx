@@ -7,12 +7,12 @@ export default function home() {
     <>
       <Head>
         <title>首页</title>
-        <meta content="动漫网站"></meta>
+        <meta name="description" content="动漫网站" />
       </Head>
       <h1>首页</h1>
       <div>home</div>
       <Button>主要按钮</Button>
-      <DatePicker onChange={(date, dateString) => console.log(dateString)} />
+      {/* <DatePicker onChange={(date, dateString) => console.log(dateString)} /> */}
     </>
   )
 }

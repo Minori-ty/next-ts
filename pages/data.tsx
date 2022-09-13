@@ -17,12 +17,33 @@ export default function Data(props: any) {
 }
 
 export async function getStaticProps() {
+  console.log('重构')
+
   const res = await fetch('http://127.0.0.1:8080/v1/login', { method: 'post' })
   const data = await res.json()
   console.log(data)
+
+  // let auth = 0
+  // if (auth == 0) {
+  //   return {
+  //     // 路由守卫，设置没有权限时重定向
+  //     redirect: {
+  //       destination: '/',
+  //     },
+  //     props: {},
+  //   }
+  // } else if (auth == 1) {
+  //   return {
+  //     // 设置没有数据时才返回404
+  //     notFound: true,
+  //     props: {},
+  //   }
+  // }
+
   return {
     props: {
       data,
     },
+    revalidate: 15,
   }
 }
