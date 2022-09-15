@@ -166,6 +166,14 @@
     "@babel/runtime-corejs3" "^7.15.4"
     classnames "^2.2.6"
 
+"@douyinfe/semi-icons@^2.19.0":
+  version "2.19.0"
+  resolved "https://registry.npmmirror.com/@douyinfe/semi-icons/-/semi-icons-2.19.0.tgz#a12ad9fd5572f832a41bb39978ff68021b7a0208"
+  integrity sha512-ixqK/Xt5hvEQt+g1ou09+Qw5DOh0pGorcCWpWswSiyW6PbEg8gpn3a/VOkYFQUvK9K9r32Zcasr+iavGIaEsEQ==
+  dependencies:
+    "@babel/runtime-corejs3" "^7.15.4"
+    classnames "^2.2.6"
+
 "@douyinfe/semi-illustrations@2.15.0":
   version "2.15.0"
   resolved "https://registry.npmmirror.com/@douyinfe/semi-illustrations/-/semi-illustrations-2.15.0.tgz#a99a58a739b59ea34d5dcfb38f2abb72b6a01608"
