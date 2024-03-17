@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import useSWR from 'swr'
 
-const url = 'http://127.0.0.1:4523/m1/1053879-0-default/users'
+const url = 'http://localhost:3000/products'
 
 export default function Index(props: IProps) {
   const [sales, setSales] = useState(props.sales)

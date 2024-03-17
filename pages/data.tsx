@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import go from '../assets/images/go.jpg'
 
 export default function Data(props: any) {
@@ -19,7 +19,7 @@ export default function Data(props: any) {
 export async function getStaticProps() {
   console.log('重构')
 
-  const res = await fetch('http://127.0.0.1:4523/m1/1053879-0-default/users', {
+  const res = await fetch('http://localhost:3000/products', {
     method: 'get',
   })
   const data = await res.json()
