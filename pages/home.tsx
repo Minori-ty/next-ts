@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import React from 'react'
-import { Button, DatePicker } from '@douyinfe/semi-ui'
 
 export default function home() {
   return (
@@ -11,7 +10,6 @@ export default function home() {
       </Head>
       <h1>首页</h1>
       <div>home</div>
-      <Button>主要按钮</Button>
       {/* <DatePicker onChange={(date, dateString) => console.log(dateString)} /> */}
     </>
   )

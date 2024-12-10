@@ -19,9 +19,12 @@ export default function Data(props: any) {
 export async function getStaticProps() {
   console.log('重构')
 
-  const res = await fetch('http://localhost:3000/products', {
-    method: 'get',
-  })
+  const res = await fetch(
+    'http://127.0.0.1:4523/m1/1053879-1210001-default/product',
+    {
+      method: 'get',
+    }
+  )
   const data = await res.json()
   console.log(data)
 
